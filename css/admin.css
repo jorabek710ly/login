@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+  }
+  
+  .admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 240px;
+    background-color: #1e293b;
+    color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .sidebar h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 10px;
+  }
+  
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .sidebar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.2s;
+  }
+  
+  .sidebar a:hover {
+    color: white;
+    transform: translateX(4px);
+  }
+  
+  .logout {
+    margin-top: auto;
+    color: #f87171;
+  }
+  
+  .logout:hover {
+    color: #fca5a5;
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  header h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #475569;
+  }
+  
+  .card p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
